@@ -10,11 +10,13 @@
 
 @layer utilities {
   .liquid-glass {
-    @apply bg-navy-950/60 backdrop-blur-xl border border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.5)];
+    background-color: rgba(6, 11, 25, 0.6);
+    @apply backdrop-blur-xl border border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.5)];
   }
   
   .liquid-glass-card {
-    @apply bg-navy-900/50 backdrop-blur-lg border border-white/5 rounded-2xl shadow-xl transition-all duration-500;
+    background-color: rgba(10, 17, 40, 0.5);
+    @apply backdrop-blur-lg border border-white/5 rounded-2xl shadow-xl transition-all duration-500;
   }
   
   .liquid-glass-card:hover {
