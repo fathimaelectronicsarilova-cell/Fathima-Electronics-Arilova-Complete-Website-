@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-midnight-950 text-slate-100 font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer utilities {
+  .liquid-glass {
+    @apply bg-midnight-950/60 backdrop-blur-xl border border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.5)];
+  }
+  
+  .liquid-glass-card {
+    @apply bg-midnight-900/50 backdrop-blur-lg border border-white/5 rounded-2xl shadow-xl transition-all duration-500;
+  }
+  
+  .liquid-glass-card:hover {
+    @apply border-gold-500/30 shadow-[0_8px_40px_rgba(212,175,55,0.1)] -translate-y-1;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-slate-400;
+  }
+  
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent bg-gold-gradient;
+  }
+  
+  /* Subtle glow for gold elements */
+  .glow-gold {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+  
+  .glow-gold:hover {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+  }
+  
+  /* Marquee Animation */
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+}
