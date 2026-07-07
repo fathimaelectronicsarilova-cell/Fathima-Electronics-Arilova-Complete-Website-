@@ -17,8 +17,8 @@ export default function Header() {
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-xl flex items-center justify-center glow-gold transition-all duration-300 group-hover:scale-105 overflow-hidden">
-              <Image src="/logo.png" alt="Fathima Electronics Logo" width={48} height={48} className="object-cover" />
+            <div className="w-14 h-14 rounded-xl flex items-center justify-center glow-gold transition-all duration-300 group-hover:scale-105 overflow-hidden">
+              <Image src="/logo.png" alt="Fathima Electronics Logo" width={56} height={56} className="object-cover" />
             </div>
             <span className="font-heading font-bold text-lg sm:text-2xl tracking-tight text-white group-hover:text-gold-400 transition-colors">
               Fathima Electronics
