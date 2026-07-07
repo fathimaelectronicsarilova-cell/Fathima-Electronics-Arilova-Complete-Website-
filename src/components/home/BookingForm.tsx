@@ -83,22 +83,22 @@ export default function BookingForm() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <label className="block text-sm font-bold tracking-wide text-slate-300 mb-3 uppercase">Name *</label>
-            <input required name="name" value={formData.name} onChange={handleChange} type="text" className="w-full bg-midnight-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all placeholder-slate-600" placeholder="John Doe" />
+            <input required name="name" value={formData.name} onChange={handleChange} type="text" className="w-full bg-navy-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all placeholder-slate-600" placeholder="John Doe" />
           </div>
           <div>
             <label className="block text-sm font-bold tracking-wide text-slate-300 mb-3 uppercase">Email Address *</label>
-            <input required name="email" value={formData.email} onChange={handleChange} type="email" className="w-full bg-midnight-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all placeholder-slate-600" placeholder="john@example.com" />
+            <input required name="email" value={formData.email} onChange={handleChange} type="email" className="w-full bg-navy-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all placeholder-slate-600" placeholder="john@example.com" />
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <label className="block text-sm font-bold tracking-wide text-slate-300 mb-3 uppercase">Phone Number *</label>
-            <input required name="phone" value={formData.phone} onChange={handleChange} type="tel" className="w-full bg-midnight-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all placeholder-slate-600" placeholder="+91 98765 43210" />
+            <input required name="phone" value={formData.phone} onChange={handleChange} type="tel" className="w-full bg-navy-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all placeholder-slate-600" placeholder="+91 98765 43210" />
           </div>
           <div>
             <label className="block text-sm font-bold tracking-wide text-slate-300 mb-3 uppercase">TV Brand *</label>
-            <select required name="tvBrand" value={formData.tvBrand} onChange={handleChange} className="w-full bg-midnight-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all appearance-none cursor-pointer">
+            <select required name="tvBrand" value={formData.tvBrand} onChange={handleChange} className="w-full bg-navy-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all appearance-none cursor-pointer">
               <option value="">Select Brand...</option>
               <option value="Samsung">Samsung</option>
               <option value="LG">LG</option>
@@ -111,19 +111,19 @@ export default function BookingForm() {
           </div>
           <div>
             <label className="block text-sm font-bold tracking-wide text-slate-300 mb-3 uppercase">Address / Locality *</label>
-            <input required name="address" value={formData.address} onChange={handleChange} type="text" className="w-full bg-midnight-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all placeholder-slate-600" placeholder="Your City/Area" />
+            <input required name="address" value={formData.address} onChange={handleChange} type="text" className="w-full bg-navy-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all placeholder-slate-600" placeholder="Your City/Area" />
           </div>
         </div>
 
         <div>
           <label className="block text-sm font-bold tracking-wide text-slate-300 mb-3 uppercase">Describe the Problem *</label>
-          <textarea required name="issueDescription" value={formData.issueDescription} onChange={handleChange} rows={4} className="w-full bg-midnight-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all placeholder-slate-600 resize-none" placeholder="E.g., TV has sound but no picture..."></textarea>
+          <textarea required name="issueDescription" value={formData.issueDescription} onChange={handleChange} rows={4} className="w-full bg-navy-950 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all placeholder-slate-600 resize-none" placeholder="E.g., TV has sound but no picture..."></textarea>
         </div>
 
         <button 
           type="submit" 
           disabled={isSubmitting}
-          className="w-full bg-gold-gradient text-midnight-950 font-bold py-5 rounded-xl flex items-center justify-center gap-3 transition-all disabled:opacity-50 disabled:cursor-not-allowed glow-gold hover:-translate-y-1 uppercase tracking-wider text-lg"
+          className="w-full bg-gold-gradient text-navy-950 font-bold py-5 rounded-xl flex items-center justify-center gap-3 transition-all disabled:opacity-50 disabled:cursor-not-allowed glow-gold hover:-translate-y-1 uppercase tracking-wider text-lg"
         >
           {isSubmitting ? "Sending..." : "Submit Booking Request"}
           {!isSubmitting && <Send size={22} />}

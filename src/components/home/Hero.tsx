@@ -18,7 +18,7 @@ export default function Hero() {
           className="object-cover object-center opacity-30 mix-blend-luminosity"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-midnight-950 via-midnight-950/80 to-midnight-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-navy-950/80 to-navy-950" />
         <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gold-500/20 blur-[150px] rounded-full pointer-events-none" />
       </div>
 
@@ -64,7 +64,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
               <Link 
                 href="/contact" 
-                className="w-full sm:w-auto px-10 py-4 md:py-5 bg-gold-gradient text-midnight-950 rounded-xl font-bold text-lg transition-all glow-gold flex items-center justify-center gap-2 uppercase tracking-wide hover:-translate-y-1"
+                className="w-full sm:w-auto px-10 py-4 md:py-5 bg-gold-gradient text-navy-950 rounded-xl font-bold text-lg transition-all glow-gold flex items-center justify-center gap-2 uppercase tracking-wide hover:-translate-y-1"
               >
                 Book Repair Now
               </Link>

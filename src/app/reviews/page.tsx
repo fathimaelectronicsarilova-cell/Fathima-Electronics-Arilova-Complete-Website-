@@ -19,7 +19,7 @@ export default function ReviewsPage() {
             className="object-cover object-center opacity-40 mix-blend-luminosity"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-midnight-950 via-midnight-950/80 to-midnight-950" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-navy-950/80 to-navy-950" />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4">
@@ -36,11 +36,11 @@ export default function ReviewsPage() {
       <Testimonials hideTitle={true} />
 
       {/* Leave a Review CTA */}
-      <section className="py-20 bg-midnight-900 border-t border-white/5 text-center">
+      <section className="py-20 bg-navy-900 border-t border-white/5 text-center">
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-6 text-white">Have we fixed your TV recently?</h2>
           <p className="text-slate-400 mb-8">We strive for 5-star service every single time. If you were happy with our technician, please leave us a review on Google!</p>
-          <a href="#" className="inline-block px-10 py-4 bg-white text-midnight-950 font-bold rounded-xl uppercase tracking-wide hover:-translate-y-1 transition-all">
+          <a href="#" className="inline-block px-10 py-4 bg-white text-navy-950 font-bold rounded-xl uppercase tracking-wide hover:-translate-y-1 transition-all">
             Write a Google Review
           </a>
         </div>

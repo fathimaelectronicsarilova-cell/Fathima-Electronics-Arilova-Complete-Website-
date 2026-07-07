@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-32 bg-midnight-950">
+    <section className="py-32 bg-navy-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <ScrollReveal>

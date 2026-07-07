@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-midnight-950 text-slate-100 font-sans antialiased;
+    @apply bg-navy-950 text-slate-100 font-sans antialiased;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -14,11 +14,11 @@
 
 @layer utilities {
   .liquid-glass {
-    @apply bg-midnight-950/60 backdrop-blur-xl border border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.5)];
+    @apply bg-navy-950/60 backdrop-blur-xl border border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.5)];
   }
   
   .liquid-glass-card {
-    @apply bg-midnight-900/50 backdrop-blur-lg border border-white/5 rounded-2xl shadow-xl transition-all duration-500;
+    @apply bg-navy-900/50 backdrop-blur-lg border border-white/5 rounded-2xl shadow-xl transition-all duration-500;
   }
   
   .liquid-glass-card:hover {

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function MobileStickyBar() {
   return (
-    <div className="md:hidden fixed bottom-0 w-full z-50 bg-midnight-950/90 backdrop-blur-xl border-t border-white/10 p-3 pb-safe">
+    <div className="md:hidden fixed bottom-0 w-full z-50 bg-navy-950/90 backdrop-blur-xl border-t border-white/10 p-3 pb-safe">
       <div className="grid grid-cols-3 gap-3">
         <a 
           href={`tel:+91${CONTACT_NUMBER}`} 
@@ -26,7 +26,7 @@ export default function MobileStickyBar() {
 
         <Link 
           href="/contact" 
-          className="flex flex-col items-center justify-center py-2.5 bg-gold-gradient rounded-xl text-midnight-950 font-bold transition-all glow-gold"
+          className="flex flex-col items-center justify-center py-2.5 bg-gold-gradient rounded-xl text-navy-950 font-bold transition-all glow-gold"
         >
           <Calendar size={22} className="mb-1" />
           <span className="text-[10px] uppercase tracking-widest">Book</span>

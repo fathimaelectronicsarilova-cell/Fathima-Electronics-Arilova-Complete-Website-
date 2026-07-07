@@ -15,7 +15,7 @@ const services = [
 
 export default function ServicesGrid() {
   return (
-    <section className="py-32 bg-midnight-950" id="services">
+    <section className="py-32 bg-navy-950" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <ScrollReveal>

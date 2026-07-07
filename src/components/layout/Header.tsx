@@ -16,7 +16,7 @@ export default function Header() {
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-xl bg-gold-gradient flex items-center justify-center text-midnight-950 font-bold text-2xl glow-gold transition-all duration-300 group-hover:scale-105">
+            <div className="w-12 h-12 rounded-xl bg-gold-gradient flex items-center justify-center text-navy-950 font-bold text-2xl glow-gold transition-all duration-300 group-hover:scale-105">
               TV
             </div>
             <span className="font-heading font-bold text-lg sm:text-2xl tracking-tight text-white group-hover:text-gold-400 transition-colors">
@@ -45,7 +45,7 @@ export default function Header() {
             </a>
             <Link 
               href="/contact" 
-              className="bg-gold-500 hover:bg-gold-400 text-midnight-950 px-6 py-3 rounded-lg text-sm font-bold transition-all glow-gold uppercase tracking-wide hover:-translate-y-0.5"
+              className="bg-gold-500 hover:bg-gold-400 text-navy-950 px-6 py-3 rounded-lg text-sm font-bold transition-all glow-gold uppercase tracking-wide hover:-translate-y-0.5"
             >
               Book Repair
             </Link>
@@ -68,7 +68,7 @@ export default function Header() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden bg-midnight-900 border-t border-white/5 px-4 py-8 flex flex-col gap-6 shadow-2xl absolute w-full"
+            className="md:hidden bg-navy-900 border-t border-white/5 px-4 py-8 flex flex-col gap-6 shadow-2xl absolute w-full"
           >
             {["Services", "Brands", "Reviews", "FAQ"].map((item) => (
               <Link 
@@ -83,7 +83,7 @@ export default function Header() {
             <hr className="border-white/5 my-2" />
             <Link 
               href="/contact" 
-              className="bg-gold-gradient text-midnight-950 text-center py-4 rounded-xl font-bold w-full uppercase tracking-wide glow-gold"
+              className="bg-gold-gradient text-navy-950 text-center py-4 rounded-xl font-bold w-full uppercase tracking-wide glow-gold"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Book Repair Online

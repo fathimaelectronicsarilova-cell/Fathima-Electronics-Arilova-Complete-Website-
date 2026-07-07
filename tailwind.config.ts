@@ -9,15 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        midnight: {
-          950: "#050505", // Deepest black for background
-          900: "#0a0a0a", // Secondary black
-          800: "#141414", // Surface black/cards
-          700: "#1f1f1f", // Borders
+        navy: {
+          950: "#060B19", // Deepest navy for background
+          900: "#0A1128", // Secondary navy
+          800: "#142145", // Surface navy/cards
+          700: "#1E3163", // Borders
         },
         gold: {
-          400: "#F5D061",
-          500: "#D4AF37", // Primary Gold Accent
+          400: "#F2E3C6", // Champagne highlight
+          500: "#D4AF37", // Classic Gold Accent
           600: "#AA8C2C", // Darker Gold for hover
         },
         emerald: {
@@ -29,12 +29,12 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"],
-        heading: ["var(--font-poppins)", "sans-serif"],
+        sans: ["var(--font-jakarta)", "sans-serif"],
+        heading: ["var(--font-playfair)", "serif"],
       },
       backgroundImage: {
         'glass-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.005) 100%)',
-        'gold-gradient': 'linear-gradient(135deg, #F5D061 0%, #D4AF37 100%)',
+        'gold-gradient': 'linear-gradient(135deg, #F2E3C6 0%, #D4AF37 100%)',
       }
     },
   },

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import MobileStickyBar from "@/components/layout/MobileStickyBar";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const poppins = Poppins({ 
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta" });
+const playfair = Playfair_Display({ 
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-poppins" 
+  variable: "--font-playfair" 
 });
 
 export const metadata: Metadata = {
@@ -22,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
-      <body className="bg-midnight-950 text-slate-100 min-h-screen pb-16 md:pb-0 antialiased">
+    <html lang="en" className={`${jakarta.variable} ${playfair.variable}`}>
+      <body className="bg-navy-950 text-slate-100 min-h-screen pb-16 md:pb-0 antialiased">
         <Header />
         {children}
         <MobileStickyBar />

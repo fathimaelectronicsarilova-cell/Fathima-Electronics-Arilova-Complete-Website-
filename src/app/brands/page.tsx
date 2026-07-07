@@ -29,7 +29,7 @@ export default function BrandsPage() {
             className="object-cover object-center opacity-30 mix-blend-luminosity"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-midnight-950 via-midnight-950/80 to-midnight-950" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-navy-950/80 to-navy-950" />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4">
@@ -45,7 +45,7 @@ export default function BrandsPage() {
       <BrandsMarquee />
 
       {/* Specific Brand Information */}
-      <section className="py-24 bg-midnight-950">
+      <section className="py-24 bg-navy-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {topBrands.map((brand, idx) => (

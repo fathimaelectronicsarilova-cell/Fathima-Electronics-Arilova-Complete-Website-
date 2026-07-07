@@ -9,7 +9,7 @@ export default function BrandsMarquee() {
   const marqueeBrands = [...brands, ...brands];
 
   return (
-    <section className="py-10 border-y border-white/5 bg-midnight-950 overflow-hidden relative">
+    <section className="py-10 border-y border-white/5 bg-navy-950 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
         <ScrollReveal>
           <p className="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest">
@@ -20,7 +20,7 @@ export default function BrandsMarquee() {
 
       <div className="relative flex w-[200%] md:w-[150%]">
         {/* Left Gradient Fade */}
-        <div className="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-midnight-950 to-transparent z-10"></div>
+        <div className="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-navy-950 to-transparent z-10"></div>
         
         {/* Scrolling Content */}
         <div className="flex animate-marquee opacity-60 w-full items-center">
@@ -35,7 +35,7 @@ export default function BrandsMarquee() {
         </div>
 
         {/* Right Gradient Fade */}
-        <div className="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-midnight-950 to-transparent z-10"></div>
+        <div className="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-navy-950 to-transparent z-10"></div>
       </div>
     </section>
   );

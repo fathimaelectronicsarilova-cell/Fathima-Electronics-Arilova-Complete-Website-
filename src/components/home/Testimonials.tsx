@@ -122,7 +122,7 @@ export default function Testimonials({ hideTitle = false }: TestimonialsProps) {
   };
 
   return (
-    <section className={`${hideTitle ? 'pt-12 pb-32' : 'py-32'} bg-midnight-950 relative`}>
+    <section className={`${hideTitle ? 'pt-12 pb-32' : 'py-32'} bg-navy-950 relative`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <ScrollReveal>
@@ -132,13 +132,13 @@ export default function Testimonials({ hideTitle = false }: TestimonialsProps) {
             )}
             
             {/* Pill Toggle */}
-            <div className="inline-flex relative p-1.5 bg-midnight-900 border border-white/10 rounded-full mb-8 shadow-xl">
+            <div className="inline-flex relative p-1.5 bg-navy-900 border border-white/10 rounded-full mb-8 shadow-xl">
               {['website', 'justdial'].map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab as "website" | "justdial")}
                   className={`relative px-8 py-3 text-sm sm:text-base font-bold uppercase tracking-wider rounded-full transition-colors z-10 ${
-                    activeTab === tab ? 'text-midnight-950' : 'text-slate-400 hover:text-white'
+                    activeTab === tab ? 'text-navy-950' : 'text-slate-400 hover:text-white'
                   }`}
                 >
                   {activeTab === tab && (
@@ -184,7 +184,7 @@ export default function Testimonials({ hideTitle = false }: TestimonialsProps) {
               <div className="hidden sm:block w-px h-12 bg-white/10 mx-2"></div>
               <button 
                 onClick={() => setIsModalOpen(true)}
-                className="bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500 hover:text-midnight-950 px-6 py-3 rounded-xl font-bold transition-all flex items-center gap-2 uppercase tracking-wide"
+                className="bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500 hover:text-navy-950 px-6 py-3 rounded-xl font-bold transition-all flex items-center gap-2 uppercase tracking-wide"
               >
                 <MessageSquarePlus size={20} />
                 Leave a Review
@@ -259,8 +259,8 @@ export default function Testimonials({ hideTitle = false }: TestimonialsProps) {
 
       {/* Write Review Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-midnight-950/80 backdrop-blur-md">
-          <div className="bg-midnight-900 border border-white/10 p-8 rounded-2xl w-full max-w-lg relative animate-in zoom-in-95 duration-200 shadow-2xl shadow-gold-500/10">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-navy-950/80 backdrop-blur-md">
+          <div className="bg-navy-900 border border-white/10 p-8 rounded-2xl w-full max-w-lg relative animate-in zoom-in-95 duration-200 shadow-2xl shadow-gold-500/10">
             <button 
               onClick={() => setIsModalOpen(false)}
               className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
@@ -282,7 +282,7 @@ export default function Testimonials({ hideTitle = false }: TestimonialsProps) {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-bold tracking-wide text-slate-300 mb-2 uppercase">Your Name</label>
-                  <input required value={name} onChange={e => setName(e.target.value)} type="text" className="w-full bg-midnight-950 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all" placeholder="John Doe" />
+                  <input required value={name} onChange={e => setName(e.target.value)} type="text" className="w-full bg-navy-950 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all" placeholder="John Doe" />
                 </div>
                 
                 <div>
@@ -303,7 +303,7 @@ export default function Testimonials({ hideTitle = false }: TestimonialsProps) {
 
                 <div>
                   <label className="block text-sm font-bold tracking-wide text-slate-300 mb-2 uppercase">Your Experience</label>
-                  <textarea required value={comment} onChange={e => setComment(e.target.value)} rows={4} className="w-full bg-midnight-950 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all resize-none" placeholder="How was our service?"></textarea>
+                  <textarea required value={comment} onChange={e => setComment(e.target.value)} rows={4} className="w-full bg-navy-950 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-all resize-none" placeholder="How was our service?"></textarea>
                 </div>
 
                 {submitStatus === "error" && (
@@ -313,7 +313,7 @@ export default function Testimonials({ hideTitle = false }: TestimonialsProps) {
                 <button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="w-full bg-gold-gradient text-midnight-950 font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-50 glow-gold hover:-translate-y-1 uppercase tracking-wide"
+                  className="w-full bg-gold-gradient text-navy-950 font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-50 glow-gold hover:-translate-y-1 uppercase tracking-wide"
                 >
                   {isSubmitting ? "Posting..." : "Post Review"}
                   {!isSubmitting && <Send size={18} />}

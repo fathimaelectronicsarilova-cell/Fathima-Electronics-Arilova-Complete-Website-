@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen pt-24 bg-midnight-950">
+    <main className="min-h-screen pt-24 bg-navy-950">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden flex items-center justify-center text-center">
         <div className="absolute inset-0 z-0">
@@ -21,7 +21,7 @@ export default function ContactPage() {
             className="object-cover object-center opacity-30 mix-blend-luminosity"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-midnight-950 via-midnight-950/80 to-midnight-950" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-navy-950/80 to-navy-950" />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4">

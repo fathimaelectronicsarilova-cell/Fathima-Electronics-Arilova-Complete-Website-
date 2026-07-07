@@ -13,7 +13,7 @@ const problems = [
 
 export default function CommonProblems() {
   return (
-    <section className="py-32 bg-midnight-900 border-y border-white/5 relative overflow-hidden">
+    <section className="py-32 bg-navy-900 border-y border-white/5 relative overflow-hidden">
       {/* Decorative Glow */}
       <div className="absolute top-1/2 right-[-10%] -translate-y-1/2 w-[600px] h-[600px] bg-gold-500/5 blur-[120px] rounded-full pointer-events-none" />
 
@@ -42,7 +42,7 @@ export default function CommonProblems() {
           <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
             {problems.map((prob, idx) => (
               <ScrollReveal key={idx} delay={idx * 0.15}>
-                <div className="bg-midnight-950/80 border border-white/5 rounded-2xl p-8 hover:border-gold-500/30 transition-colors group h-full flex flex-col backdrop-blur-md shadow-xl">
+                <div className="bg-navy-950/80 border border-white/5 rounded-2xl p-8 hover:border-gold-500/30 transition-colors group h-full flex flex-col backdrop-blur-md shadow-xl">
                   <prob.icon size={32} className="text-gold-500 mb-6 group-hover:scale-110 transition-transform duration-500" />
                   <h3 className="text-xl font-bold mb-3">{prob.title}</h3>
                   <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">{prob.desc}</p>
