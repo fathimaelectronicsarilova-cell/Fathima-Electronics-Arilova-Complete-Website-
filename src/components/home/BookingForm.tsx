@@ -44,8 +44,8 @@ export default function BookingForm() {
       // Construct WhatsApp Message
       const message = `*New Repair Booking!* 📺%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*TV Brand:* ${formData.tvBrand}%0A*Address:* ${formData.address}%0A*Issue:* ${formData.issueDescription}`;
       
-      // Open WhatsApp in a new tab
-      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+      // Navigate current window to WhatsApp (bypasses popup blockers)
+      window.location.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
 
       setFormData({ name: "", email: "", phone: "", tvBrand: "", address: "", issueDescription: "" });
     } catch (error) {
