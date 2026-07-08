@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { supabase } from "@/lib/supabase";
+import { WHATSAPP_NUMBER } from "@/lib/constants";
 
 export default function BookingForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -39,6 +40,13 @@ export default function BookingForm() {
       if (!response.ok) throw new Error("Failed to submit booking");
 
       setSubmitStatus("success");
+      
+      // Construct WhatsApp Message
+      const message = `*New Repair Booking!* 📺%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*TV Brand:* ${formData.tvBrand}%0A*Address:* ${formData.address}%0A*Issue:* ${formData.issueDescription}`;
+      
+      // Open WhatsApp in a new tab
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+
       setFormData({ name: "", email: "", phone: "", tvBrand: "", address: "", issueDescription: "" });
     } catch (error) {
       console.error("Error submitting booking:", error);
