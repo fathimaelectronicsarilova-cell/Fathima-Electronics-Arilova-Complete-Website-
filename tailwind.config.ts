@@ -29,8 +29,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sans: ["var(--font-jakarta)", "sans-serif"],
-        heading: ["var(--font-playfair)", "serif"],
+        sans: ["var(--font-inter)", "sans-serif"],
+        heading: ["var(--font-outfit)", "sans-serif"],
       },
       backgroundImage: {
         'glass-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.005) 100%)',

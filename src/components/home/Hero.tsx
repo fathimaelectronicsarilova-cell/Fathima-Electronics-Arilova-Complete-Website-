@@ -86,7 +86,7 @@ export default function Hero() {
             {/* Proof Stats - Vertical Layout for right side */}
             <div className="grid grid-cols-2 gap-6 liquid-glass-card p-8 border-gold-500/20">
               <div className="flex flex-col items-center text-center p-4">
-                <h3 className="text-3xl font-bold text-white mb-1 flex items-center justify-center">4.9<Star className="ml-1 text-gold-400 fill-gold-400" size={20}/></h3>
+                <h3 className="text-3xl font-bold text-white mb-1 flex items-center justify-center">5.0<Star className="ml-1 text-gold-400 fill-gold-400" size={20}/></h3>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Google Reviews</p>
               </div>
               <div className="flex flex-col items-center text-center p-4">
