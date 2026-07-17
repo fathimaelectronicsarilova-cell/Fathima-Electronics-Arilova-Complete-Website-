@@ -12,8 +12,39 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Fathima Electronics | Premium TV Repair",
-  description: "Expert TV Repair Services for LED, OLED, Smart TVs and Android TVs.",
+  metadataBase: new URL('https://www.fathimaelectronics.com'),
+  title: {
+    default: "Fathima Electronics | Best TV Repair in Arilova, Vizag",
+    template: "%s | Fathima Electronics",
+  },
+  description: "Expert TV Repair Services in Arilova, Vizag. We repair LED, OLED, QLED, Smart TVs and Android TVs with same-day doorstep service. 10+ years experience.",
+  keywords: ["TV Repair Vizag", "LED TV Repair Arilova", "Smart TV Repair Near Me", "TV Mechanic Vizag", "Fathima Electronics", "Sony TV Service", "Samsung TV Repair Vizag", "LG TV Repair", "Doorstep TV Repair"],
+  authors: [{ name: "Fathima Electronics" }],
+  creator: "Fathima Electronics",
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://www.fathimaelectronics.com",
+    title: "Fathima Electronics | Best TV Repair in Arilova, Vizag",
+    description: "Expert Doorstep TV Repair in Arilova, Vizag. Call us for LED, OLED, and Smart TV repairs.",
+    siteName: "Fathima Electronics",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fathima Electronics | Premium TV Repair in Vizag",
+    description: "Expert Doorstep TV Repair in Arilova, Vizag.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
