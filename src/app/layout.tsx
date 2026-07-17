@@ -28,11 +28,18 @@ export const metadata: Metadata = {
     title: "Fathima Electronics | Best TV Repair in Arilova, Vizag",
     description: "Expert Doorstep TV Repair in Arilova, Vizag. Call us for LED, OLED, and Smart TV repairs.",
     siteName: "Fathima Electronics",
+    images: [{
+      url: "/hero-bg.png",
+      width: 1200,
+      height: 630,
+      alt: "Fathima Electronics TV Repair",
+    }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fathima Electronics | Premium TV Repair in Vizag",
     description: "Expert Doorstep TV Repair in Arilova, Vizag.",
+    images: ["/hero-bg.png"],
   },
   robots: {
     index: true,
