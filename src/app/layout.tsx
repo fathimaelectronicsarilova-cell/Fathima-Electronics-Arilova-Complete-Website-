@@ -74,6 +74,51 @@ export default function RootLayout({
         <Header />
         {children}
         <MobileStickyBar />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "TelevisionService",
+              "name": "Fathima Electronics",
+              "image": "https://www.fathimaelectronics.com/hero-bg.png",
+              "@id": "https://www.fathimaelectronics.com/#localbusiness",
+              "url": "https://www.fathimaelectronics.com",
+              "telephone": "+919392427258",
+              "priceRange": "INR",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Bus stop, Arilova Last",
+                "addressLocality": "Arilova, Visakhapatnam",
+                "addressRegion": "Andhra Pradesh",
+                "postalCode": "530040",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 17.7661,
+                "longitude": 83.3223
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "06:00",
+                "closes": "21:00"
+              },
+              "sameAs": [
+                "https://www.justdial.com/Visakhapatnam/Fathima-Electronics-Near-Shivalayam-Vedhi-Arilova/0891PX891-X891-190306115521-M9C5_BZDET"
+              ]
+            })
+          }}
+        />
       </body>
     </html>
   );

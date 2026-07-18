@@ -42,6 +42,11 @@ export default function Hero() {
           </ScrollReveal>
           
           <ScrollReveal delay={0.3}>
+            {/* Local SEO Keyword Paragraph */}
+            <p className="text-slate-400 text-sm md:text-base max-w-xl mx-auto lg:mx-0 mb-6 font-medium text-center lg:text-left leading-relaxed">
+              Looking for the best **TV repair shop near me** in Vizag? Fathima Electronics provides premium doorstep LED, OLED, and Smart TV repair services across Arilova and Visakhapatnam.
+            </p>
+            
             {/* Features List */}
             <div className="flex flex-col gap-3 text-base md:text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 mb-10 font-medium">
               <div className="flex items-center justify-center lg:justify-start gap-3">
