@@ -137,7 +137,7 @@ export default function Testimonials({ hideTitle = false }: TestimonialsProps) {
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab as "website" | "justdial")}
-                  className={`relative px-8 py-3 text-sm sm:text-base font-bold uppercase tracking-wider rounded-full transition-colors z-10 ${
+                  className={`relative px-4 sm:px-8 py-2 sm:py-3 text-xs sm:text-base font-bold uppercase tracking-wider rounded-full transition-colors z-10 ${
                     activeTab === tab ? 'text-navy-950' : 'text-slate-400 hover:text-white'
                   }`}
                 >

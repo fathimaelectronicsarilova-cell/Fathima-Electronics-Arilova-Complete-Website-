@@ -11,6 +11,12 @@ const outfit = Outfit({
   variable: "--font-outfit" 
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.fathimaelectronics.com'),
   title: {
