@@ -47,6 +47,9 @@ export const metadata: Metadata = {
     description: "Expert Doorstep TV Repair in Arilova, Vizag.",
     images: ["/hero-bg.png"],
   },
+  alternates: {
+    canonical: 'https://www.fathimaelectronics.com',
+  },
   robots: {
     index: true,
     follow: true,
